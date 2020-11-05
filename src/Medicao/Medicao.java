@@ -2,11 +2,14 @@ package Medicao;
 
 import Pais.Pais;
 import StatusCaso.StatusCaso;
-import java.time.LocalDate;
 
 public class Medicao{
-    private Pais pais = new Pais();
-    private LocalDate data;
+
+	private Pais pais = new Pais();
+    private String data;
+	private int casos;
+	private StatusCaso status;
+
     /**
 	 * @return the pais
 	 */
@@ -16,7 +19,7 @@ public class Medicao{
 	/**
 	 * @return the data
 	 */
-	public LocalDate getData() {
+	public String getData() {
 		return data;
 	}
 	/**
@@ -40,7 +43,7 @@ public class Medicao{
 	/**
 	 * @param data the data to set
 	 */
-	public void setData(LocalDate data) {
+	public void setData(String data) {
 		this.data = data;
 	}
 	/**
@@ -55,6 +58,5 @@ public class Medicao{
 	public void setStatus(StatusCaso status) {
 		this.status = status;
 	}
-	private int casos;
-    private StatusCaso status;
+	
 }
